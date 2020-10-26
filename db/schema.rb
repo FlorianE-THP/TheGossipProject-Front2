@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2020_10_26_082158) do
     t.string "title"
     t.text "content"
     t.bigint "user_id"
+    t.datetime "created_at"
     t.index ["user_id"], name: "index_gossips_on_user_id"
   end
 

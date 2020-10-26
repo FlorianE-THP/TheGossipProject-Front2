@@ -7,21 +7,18 @@ end
 
 #Creation User
 300.times do |user|
-User.create!(first_name: Faker::Name.first_name,last_name: Faker::Name.last_name, description: Faker::Lorem.sentence(word_count: 12), email: Faker::Internet.email, age: Faker::Number.number(digits: 2), city_id: City.ids.sample)
-
+    User.create!(first_name: Faker::Name.first_name,last_name: Faker::Name.last_name, description: Faker::Lorem.sentence(word_count: 12), email: Faker::Internet.email, age: Faker::Number.number(digits: 2), city_id: City.ids.sample)
 end
 
 #Creation Gossip
 200.times do 
-    Gossip.create!(title: Faker::Lorem.words(number: 4), content: Faker::Lorem.sentence(word_count: 3),user_id: User.ids.sample )
-   
-  end
+    Gossip.create!(title: Faker::Game.title, content: Faker::Lorem.sentence(word_count: 3),user_id: User.ids.sample, created_at: Faker::Date.between(from: '2014-09-23', to: '2014-09-25') ) 
+end
 
 
 #Creation Tag
 42.times do
   Tag.create!(title: Faker::Lorem.word)
- 
 end
 
 
