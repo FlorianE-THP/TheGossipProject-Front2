@@ -3,10 +3,29 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 body {
-    
+    margin: 0, auto;
     text-align: center;
 }
 
-p { 
-    margin-top: 35px;
+h5 {
+    font-weight: normal;
 }
+
+.card {
+    max-width: 300px;
+    max-height: 200px;
+    margin-top: 20px;
+    padding-top: 20px;
+    
+}
+
+.row {
+
+display: inline-flex;
+
+}
+
+.button-des {
+    margin-top: 30px;
+}
+
